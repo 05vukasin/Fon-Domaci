@@ -1,0 +1,97 @@
+/* Osnovni stilovi za telo i sekcije */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    z-index: -1;
+    animation: backgroundChange 10s infinite alternate ease-in-out;
+}
+
+/* Definisanje kružnog gradienta sa fade-in i fade-out efektima */
+@keyframes backgroundChange {
+    0% {
+        background: radial-gradient(circle, #fd3300, #feb47b);
+    }
+    25% {
+        background: radial-gradient(circle, #120025, #52ebff);
+    }
+    50% {
+        background: radial-gradient(circle, #220500, #fad0c4);
+    }
+    75% {
+        background: radial-gradient(circle, #00c6ff, #00070f);
+    }
+    100% {
+        background: radial-gradient(circle, #f7b0b0, #f00088);
+    }
+}
+
+/* Kontakt forma */
+.contact-form-section {
+    padding: 50px 0;
+    background: rgba(255, 255, 255, 0.1); /* Poluprovidna bela pozadina za kontakt formu */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ff7e5f;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

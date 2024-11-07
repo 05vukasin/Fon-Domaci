@@ -1,0 +1,65 @@
+
+/* Hero Section */
+.hero {
+    background-image: url('/img/hero-bacground.webp');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    
+    align-items: center;
+}
+
+.naslov {
+    font-size: 12rem; /* Veći font za naslov */
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    text-align: left;
+}
+
+/* Kontakt Section */
+.Kontakt {
+    background-color: #000; /* Crna pozadina za kontakt */
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.Kontakt .kontakt-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Pulsirajuće Dugme */
+.kontakt-dugme {
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px; /* Dugme u obliku pilule */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: pulsiranje 1.5s infinite; /* Animacija pulsiranja */
+}
+
+.kontakt-dugme:hover {
+    transform: scale(1.1); /* Efekat na hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Animacija pulsiranja */
+@keyframes pulsiranje {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
