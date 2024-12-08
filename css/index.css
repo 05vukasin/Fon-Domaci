@@ -63,3 +63,61 @@
     }
 }
 
+
+
+/* Responsive dizajn za telefone */
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero {
+        height: 60vh; /* Smanji visinu hero sekcije na manjim ekranima */
+        justify-content: center; /* Centriraj sadržaj po vertikali */
+        text-align: center; /* Centriraj tekst */
+    }
+
+    .naslov {
+        font-size: 4rem; /* Smanji veličinu naslova */
+        text-align: center; /* Centriraj naslov */
+        margin: 0 10px; /* Dodaj razmak sa strane */
+    }
+
+    /* Kontakt Section */
+    .Kontakt .kontakt-text p {
+        font-size: 16px; /* Smanji veličinu teksta */
+        margin: 0 20px; /* Dodaj razmak sa strane */
+    }
+
+    .kontakt-dugme {
+        font-size: 16px; /* Smanji veličinu dugmeta */
+        padding: 10px 30px; /* Smanji padding dugmeta */
+    }
+
+    /* Navigacija */
+    nav {
+        position: relative;
+    }
+
+    .nav-list {
+        display: none; /* Sakrij meni po defaultu */
+        flex-direction: column;
+        background-color: #000; /* Crna pozadina za meni */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-list li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-list li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .menu-toggle.active + .nav-list {
+        display: flex; /* Prikaži meni kad je dugme aktivno */
+    }
+}
